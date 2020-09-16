@@ -355,7 +355,7 @@ public class UsersController {
             return ResponseEntity.notFound().build();
     }
 
-    @ApiOperation("Create a user")
+    @ApiOperation("Create a new user")
     @ApiResponses({
             @ApiResponse(code=409, message = "User already exists"),
             @ApiResponse(code=201, message = "User created correctly", responseHeaders = {
